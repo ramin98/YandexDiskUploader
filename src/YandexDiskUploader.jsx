@@ -5,7 +5,13 @@ const MAX_FILES = 100;
 
 const YandexDiskUploader = () => {
   const onDrop = useCallback((acceptedFiles) => {
-    // Handle the file upload logic to Yandex.Disk here
+     fetch("example", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(acceptedFiles),
+    });
     console.log('Uploaded files:', acceptedFiles);
   }, []);
 
