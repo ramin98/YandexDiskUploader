@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.dropzone {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.dropzone.active {
+  border-color: #36b5b1;
+}
